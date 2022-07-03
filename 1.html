@@ -1,0 +1,75 @@
+<style>
+	body
+	{
+		margin: 0;
+	}
+	header
+	{
+		background: black;
+		color: white;
+		display: flex;
+		padding: 10px;
+		justify-content: space-between;
+	}
+	header a
+	{
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+	}
+	aside 
+	{
+		position: fixed;
+		background:black;
+		top: 100px;
+		padding: 10px;
+		height: 70vh;
+		overflow: auto;
+		box-shadow: 0 10px 10px black;
+		transition: 0.5s;
+		transform: translateX(-100%);
+	}
+	aside.active
+	{
+		transform: translateX(0%);
+	}
+	aside p
+	{
+		padding: 10px;
+		color: white;
+	} 
+
+	::-webkit-scrollbar
+	{
+		width: 4px;
+	}
+</style>
+
+<header>
+	<div>
+		<button onclick="aside.className='active'">show</button>
+		<button onclick="aside.className=''">hide</button>
+	</div>
+	<div>
+		<a href="">login</a>
+		<a href="">signup</a>
+	</div>
+</header>
+
+
+<aside id="aside" class="active">
+	<p>home</p>
+	<p>contact</p>
+	<p>about</p>
+	<p>services</p>
+	<p>portfolio</p>
+	<p>my projects</p>
+	<p>github</p>
+	<p>social</p>
+	<p>repos</p>
+	<p>html</p>
+	<p>css</p>
+	<p>javascript</p>
+	<p>jquery</p>
+	<p>reactjs</p>
+</aside>

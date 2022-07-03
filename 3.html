@@ -1,0 +1,113 @@
+<style>
+	body,h1
+	{
+		margin: 0;
+	}
+	.main
+	{
+		width: 100vw;
+		overflow: hidden;
+	}
+	.main .flex
+	{
+		display: flex;
+		text-align: center;
+		width: calc(  100vw * 10 );
+		transition: 1s;
+	}
+	.main .flex .item
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 80vh;
+		width: 100vw;	
+	}
+	.main .flex .item:nth-child(1){background: red;}
+	.main .flex .item:nth-child(2){background: green;}
+	.main .flex .item:nth-child(3){background: blue;}
+	.main .flex .item:nth-child(4){background: silver;}
+	.main .flex .item:nth-child(5){background: cyan;}
+	.main .flex .item:nth-child(6){background: pink;}
+	.main .flex .item:nth-child(7){background: brown;}
+	.main .flex .item:nth-child(8){background: purple;}
+	.main .flex .item:nth-child(9){background: tomato;}
+	.main .flex .item:nth-child(10){background: slateblue;}
+	.controls
+	{
+		padding: 30px;
+		text-align: center;
+	}
+	.controls button
+	{
+		width: 40px;
+		height: 40px;
+		border: 0;
+		background: black;
+		color: white;
+		font-size: 20px;
+		border-radius: 100px;
+	}
+</style>
+
+
+<div class="main">
+	<div id="slider" class="flex">
+		<div class="item">
+			<h1>slide1</h1>
+		</div>
+		<div class="item">
+			<h1>slide2</h1>
+		</div>
+		<div class="item">
+			<h1>slide3</h1>
+		</div>
+		<div class="item">
+			<h1>slide4</h1>
+		</div>
+		<div class="item">
+			<h1>slide5</h1>
+		</div>
+		<div class="item">
+			<h1>slide6</h1>
+		</div>
+		<div class="item">
+			<h1>slide7</h1>
+		</div>
+		<div class="item">
+			<h1>slide8</h1>
+		</div>
+		<div class="item">
+			<h1>slide9</h1>
+		</div>
+		<div class="item">
+			<h1>slide10</h1>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="controls">
+	<button onclick="slider.style.transform='translateX(0vw)'">1</button>
+	<button onclick="slider.style.transform='translateX(-100vw)'">2</button>
+	<button onclick="slider.style.transform='translateX(-200vw)'">3</button>
+	<button onclick="slider.style.transform='translateX(-300vw)'">4</button>
+	<button onclick="slider.style.transform='translateX(-400vw)'">5</button>
+	<button onclick="slider.style.transform='translateX(-500vw)'">6</button>
+	<button onclick="slider.style.transform='translateX(-600vw)'">7</button>
+	<button onclick="slider.style.transform='translateX(-700vw)'">8</button>
+	<button onclick="slider.style.transform='translateX(-800vw)'">9</button>
+	<button onclick="slider.style.transform='translateX(-900vw)'">10</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
