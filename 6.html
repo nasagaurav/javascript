@@ -1,0 +1,38 @@
+<style>
+	body
+	{
+		margin: 0;
+	}
+	img
+	{
+		position:fixed;
+		top: 0;
+		left: 0;
+	}
+</style>
+
+
+<body onmousemove="abc()">
+	<img width="100" src="tom.jpg">
+</body>
+
+<script>
+	function abc()
+	{
+		var img=document.querySelector("img")
+		img.style.top=event.y
+		img.style.left=event.x
+		img.style.transition="0.3s"
+		// img.style.transform="rotate("+event.x+"deg)"
+		img.style.transform=`rotate(${event.x}deg)`
+	}
+</script>
+
+
+
+
+
+
+
+
+

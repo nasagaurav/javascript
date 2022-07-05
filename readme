@@ -1,0 +1,31 @@
+<h1 onclick="someFunction()" id="heading1">click me </h1>	
+--------------
+
+<h1 id="heading1">click me </h1>	
+<script>
+	heading1.addEventListener("click",someFunction)
+</script>
+
+--------------
+
+<h1>click me </h1>	
+<script>
+	document.querySelector("h1").addEventListener("click",someFunction)
+
+	function someFunction()
+	{
+		//event -> this is global variable without decalre you can use it,like "this"
+	}
+</script>
+
+
+events
+onclick
+ondblclick
+onchange
+onkeyup
+oninput
+onsubmit
+onmousemove
+onmouseup
+onmousedown

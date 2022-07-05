@@ -1,0 +1,8 @@
+var x=""
+undefined
+var y="nasa"
+undefined
+x==''
+true
+y==''
+false

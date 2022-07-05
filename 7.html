@@ -1,0 +1,78 @@
+<h1 class="message"></h1>
+
+
+
+<div>
+	<h1>submit form</h1>
+	<p>name</p>
+	<input placeholder="name"/>
+	<p>email</p>
+	<input placeholder="email"/>
+	<p>phone</p>
+	<input placeholder="phone"/>
+	<p>password</p>
+	<input placeholder="password"/>
+	<p>confirm password</p>
+	<input placeholder="confirm password"/>
+	<p>otp</p>
+	<input placeholder="otp"/>
+	<p>terms and conditions</p>
+	<button onclick="register()">register</button>
+</div>
+
+<script>
+	var message=document.querySelector(".message")
+	var allInputs=document.querySelectorAll("input")
+	//allInputs[0],allInputs[1]		
+
+	function register()
+	{
+		// console.log(allInputs)
+		checkInput(allInputs[0])		
+		checkInput(allInputs[1])		
+		checkInput(allInputs[2])		
+		checkInput(allInputs[3])		
+		checkInput(allInputs[4])		
+		checkInput(allInputs[5])
+
+
+		if(checkAllInputsAreBlankOrNot(allInputs)==true)
+		{
+			message.innerHTML="your form has been successfully submitted"
+		}
+	}
+
+	function checkInput(tag)
+	{
+		var condition = tag.value==""
+
+		if(condition)
+		{
+			tag.style.background="tomato"
+		}
+		else
+		{
+			tag.style.background="white"
+		}
+	}
+
+	function checkAllInputsAreBlankOrNot(tags)
+	{
+		var status=true
+		if(tags[0].value=="") {status=false }
+		if(tags[1].value=="") {status=false }
+		if(tags[2].value=="") {status=false }
+		if(tags[3].value=="") {status=false }
+		if(tags[4].value=="") {status=false }
+		if(tags[5].value=="") {status=false }
+
+
+		return status
+	}
+
+</script>
+
+
+
+
+

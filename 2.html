@@ -1,0 +1,24 @@
+<body onmousemove="abc()">
+	<h1>hello h1</h1>
+	<h2>hello h2</h2>
+</body>
+
+
+
+<script>
+	function abc()
+	{
+		// console.log(event)
+		console.log(event.x,event.y,"onmousemove")
+		var x=event.x
+		var y=event.y
+
+		var h1=document.querySelector("h1")
+		var h2=document.querySelector("h2")
+
+		console.log(h1)
+		console.log(h2)
+		h1.innerHTML=x
+		h2.innerHTML=y
+	}
+</script>

@@ -1,0 +1,25 @@
+<body onmousemove="abc()">
+		
+	<h1>...</h1>	
+
+</body>
+
+
+
+<script>
+	function abc()
+	{
+		var h1 = document.querySelector("h1")
+		
+		var x = event.x
+		
+		var y = event.y
+		// var text=x+y
+		var text = x + `-` + y
+		// we used + bcoz it was[line 18] adding the coordinates of mouse intead we want to show up x and y both but we were getting x+y which was a number to check uncomment line 17 and comment line 18 
+		
+		h1.innerHTML = text
+	}
+</script>
+
+
