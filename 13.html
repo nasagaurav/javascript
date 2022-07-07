@@ -1,0 +1,10 @@
+<!-- https://www.w3schools.com/jsref/jsref_obj_regexp.asp -->
+<script>
+	let str="a@ b@b c@c. nasa@gmail.com gauravnasa@yahoo.com gauravnasa@outlook.com NASA@rediffmail.com"
+
+	console.log(str)
+	console.log(str.match(/[a-z]{1,100}@[a-z]{1,100}.[a-z]{3}/ig))
+</script>
+<!-- 
+anything@anything.com
+[a-z]@[a-z].[a-z] -->

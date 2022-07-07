@@ -1,0 +1,71 @@
+<h1>test excercise</h1>
+
+<textarea cols="50" rows="5" onkeyup="typing()"></textarea>
+
+
+<h2>error here</h2>
+
+
+
+<script>
+	let h1=document.querySelector("h1")
+	let textarea=document.querySelector("textarea")
+	let h2=document.querySelector("h2")
+
+	let sampleTest="this is a typing test for beginners."
+
+	h1.innerHTML=sampleTest
+	h2.innerHTML="please start typing in textarea"
+
+
+	function typing()
+	{
+		let str=textarea.value
+		ifTyping(str)			
+		ifWrongTyping(str)			
+		ifCorrectTyping(str)			
+		ifTypingIsComplete(str)			
+	}
+
+	function ifTyping(str)
+	{
+		h2.innerHTML=str
+	}
+	function ifWrongTyping(str)
+	{	
+		if(sampleTest.startsWith(str)==false)
+		{
+			textarea.style.background="tomato"
+		}
+	}
+	function ifCorrectTyping(str)
+	{
+		if(sampleTest.startsWith(str))
+		{
+			textarea.style.background="lime"
+		}
+	}
+	function ifTypingIsComplete(str)
+	{
+		if(str.length===sampleTest.length)
+		{
+			textarea.style.background="silver"
+		}	
+	}
+	
+
+
+
+</script>
+
+<!-- typing tutor
+
+
+n-ok
+na-ok
+nas-ok
+nasa-ok
+nasa.-wrong
+
+
+nasa -->

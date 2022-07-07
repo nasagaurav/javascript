@@ -1,0 +1,19 @@
+<!-- https://www.w3schools.com/jsref/jsref_obj_regexp.asp -->
+
+<script>
+	let str="abcd XYZ 122001  9879879877 @#$@#"
+
+
+	console.log(str)
+	// this is called regEXP
+	
+	// "string".match(/pattern/)
+
+	console.log(str.match(/[a-z]/g)) //g means allmatches 
+	console.log(str.match(/[A-Z]/g)) //g means allmatches 
+	console.log(str.match(/[0-9]/g)) //g means allmatches 
+	console.log(str.match(/[0-9]{10}/g)) //g means allmatches 
+	console.log(str.match(/[ ]/g)) //g means allmatches 
+	console.log(str.match(/[^a-zA-Z0-9]/g)) //g means allmatches 
+
+</script>
