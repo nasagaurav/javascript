@@ -1,0 +1,17 @@
+<script>
+	let a=[1,2,3,4,5,-6,-7,-8,-9,-10]
+
+	console.log(a.forEach(p1)) // nothing
+	console.log(a.every(p1)) // false
+	console.log(a.some(p1)) //true
+	console.log(a.filter(p1)) //[1,2,3,4,5]
+	console.log(a.map(p1)) //[true,true,true,true,true,false,false,false,false,false,]
+	console.log(a.find(p1)) //1
+
+
+	function p1(item,index,arr)
+	{
+		return item>0 //only positive
+	}	
+
+</script>

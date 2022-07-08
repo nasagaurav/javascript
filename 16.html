@@ -1,0 +1,33 @@
+<script>
+	// to filter kya krta hai
+	// filter filter krta h
+	// or saath m ye hr item pr jata h
+	// or condition jo bhi return m likhi h agar wo tru hai to ye uss item ko return krta hai
+	// nhi to nhi return krta h
+	// those are boolean true are= true,1,"welcome"
+	// in case of index only 0 is false rest are true
+	let a=[1,2,3,4,5,-6,-7,-8,-9,-10]
+
+	console.log(a.filter(p1))
+	console.log(a.filter(p2))
+	console.log(a.filter(p3))
+	console.log(a.filter(p4))
+	console.log(a.filter(p5))
+	console.log(a.filter(p6))
+	console.log(a.filter(p7))
+	console.log(a.filter(p8))
+
+	function p1(item,index,arr) { return true}
+	function p2(item,index,arr) { return 1}
+	function p3(item,index,arr) {return "welcome"}
+	function p4(item,index,arr) {return index}//index0 will not be returned here becuase 0 is false
+
+
+	
+	function p5(item,index,arr) {return item>0}
+	function p6(item,index,arr) {return item<0}
+	function p7(item,index,arr) {return item%2==0}
+	function p8(item,index,arr) {return item%2!=0}
+
+
+</script>
