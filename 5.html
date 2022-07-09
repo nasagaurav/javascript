@@ -1,0 +1,20 @@
+<script>
+	let a=["html","css","javascript","jquery","bootstrap"]
+
+
+	a.forEach(item=>console.log(item))//
+
+	console.log(a.every(x=>x.startsWith("j")))//false
+	console.log(a.some(x=>x.startsWith("j")))//true
+	console.log(a.filter(x=>x.startsWith("j")))//["javascript","jquery"]
+	console.log(a.map(x=>x.startsWith("j")))//[false,false,true,true,false]
+	
+
+
+	// apne updar ek array liya jo string ki form hai
+	// uske baad humne forach function lgya console.log lgya h
+	// where x is item 
+	// x is string type item h to string ka koi bhi function lga skte h
+	// humne startsWith lga diya
+	// startsWith return true or false depending on condition
+</script>

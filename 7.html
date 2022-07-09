@@ -1,0 +1,31 @@
+<script>
+	let a=[
+		 {id:1,name:"demo1",email:"demo1@gmail.com",age:21,gender:"female"}   ,
+		 {id:2,name:"demo2",email:"demo2@gmail.com",age:22,gender:"female"}   ,
+		 {id:3,name:"demo3",email:"demo3@gmail.com",age:23,gender:"female"}   ,
+		 {id:4,name:"demo4",email:"demo4@gmail.com",age:24,gender:"female"}   ,
+		 {id:5,name:"demo5",email:"demo5@gmail.com",age:25,gender:"male"}   ,
+		 {id:6,name:"demo6",email:"demo6@gmail.com",age:26,gender:"male"}   ,
+		 {id:7,name:"demo7",email:"demo7@gmail.com",age:27,gender:"male"}   ,
+		 {id:8,name:"demo8",email:"demo8@gmail.com",age:28,gender:"male"}   ,
+		 {id:9,name:"demo9",email:"demo9@gmail.com",age:29,gender:"female"}   ,
+		 {id:10,name:"demo10",email:"demo10@gmail.com",age:30,gender:"male"}   ,
+	]
+
+	console.log(      a.every(x=> x.age < 30 )               )// false
+	console.log(      a.some(x=> x.age < 30 )               )// true
+	
+
+	console.log(      a.filter(x=> x.age < 30 )               )
+	// returns 9 items [ {...},{...},{...}]
+	
+
+	console.log(      a.map(x=> x.age < 30 )               )
+	// [true,true,true,true,true,true,true,true,true,false]
+
+
+</script>
+
+
+
+

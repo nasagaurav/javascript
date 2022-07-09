@@ -1,0 +1,13 @@
+<script>
+	let a=[1,2,3,-4,-5]
+
+
+	console.log(a)
+	console.log(a.forEach(()=>console.log("p1()")))
+
+	console.log(a.every(item=>item>1))//false
+	console.log(a.some(item=>item>1))//true
+	console.log(a.filter(item=>item>1))//[2,3]
+	console.log(a.map(item=>item>1))//[false,true,true,false,false]
+
+</script>
