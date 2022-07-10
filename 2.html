@@ -1,0 +1,33 @@
+<script>
+	let ob1 = { name:"nasa" , email:"nasa@gmail.com" }
+
+	let ob2 = { age:34, gender:"male" }
+
+	let ob3 = {book1:"the intelligent investor"}
+
+
+	let ob4 = {book2:"compiler design"}
+
+	// below are ...object values without {}
+	// ...ob1 = name:"nasa" , email:"nasa@gmail.com"
+	// ...ob2 = age:34, gender:"male"
+	// ...ob3 = book1:"the intelligent investor"
+	// ...ob4 = book2:"compiler design"
+
+	// below are with {}
+	/*
+		{
+			name:"nasa" , email:"nasa@gmail.com",
+			age:34, gender:"male",
+			book1:"the intelligent investor",
+			book2:"compiler design",
+		}
+	*/ 
+
+	console.log(   {...ob1, ...ob2,...ob3,...ob4}  )
+</script>
+
+
+
+
+

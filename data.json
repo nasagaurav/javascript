@@ -1,0 +1,36 @@
+{
+  "student": [
+    {
+      "id": 2,
+      "name": "sample2 ka naam change on id 2"
+    },
+    {
+      "id": 3,
+      "name": "demo3"
+    },
+    {
+      "id": 4,
+      "name": "demo4"
+    },
+    {
+      "id": 5,
+      "name": "demo5"
+    },
+    {
+      "id": 6,
+      "name": "demo6"
+    },
+    {
+      "id": 7,
+      "name": "demo7"
+    },
+    {
+      "name": "gaurav nasa",
+      "id": 9
+    },
+    {
+      "name": "gaurav juneja",
+      "id": 10
+    }
+  ]
+}

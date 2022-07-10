@@ -1,0 +1,30 @@
+<script>
+	let a=[
+		{id:1,name:"amit"},
+		{id:2,name:"punit"},
+		{id:3,name:"sumit"},
+		{id:4,name:"kumit"},
+		{id:5,name:"priya"},
+		{id:6,name:"priyanka"},
+		{id:7,name:"preeti"},
+	]
+
+	const logic=name=>{
+		if(name.startsWith("pr"))
+		{
+			return "female"
+		}
+		else
+		{
+
+			return "male"
+		}
+	}
+
+	let b=a.map(item=>({...item,gender:logic(item.name)}))
+
+	console.log(a)
+	console.log(b)
+
+
+</script>

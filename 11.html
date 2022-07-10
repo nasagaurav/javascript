@@ -1,0 +1,60 @@
+<button onclick="p1()">get</button>
+<button onclick="p2()">post</button>
+<button onclick="p3()">delete</button>
+<button onclick="p4()">patch</button>
+
+
+
+<script>
+
+	function p1()
+	{	
+		// get request to get all data
+		let url="http://localhost:3000/student"
+		fetch(url)
+	}
+	function p2()
+	{
+		// post request to send data to insert for api
+
+		let data={name:"gaurav juneja"}
+		let url="http://localhost:3000/student"
+		let options={
+			method:"POST",
+			body:JSON.stringify(data),
+			headers:{
+				"Content-Type":"application/json",
+				Accept:"application/json",
+			}
+		}
+		fetch(url,options)
+
+	}
+	function p3()
+	{
+
+		// delete request to send data to delete id 1
+		let url="http://localhost:3000/student/1"
+		let options={
+			method:"DELETE"
+		}
+		fetch(url,options)
+	}
+	function p4()
+	{
+		// patch method to update any field or 1 field
+		let url="http://localhost:3000/student/2"
+		let data={name:"sample2 ka naam change on id 2"}
+		let options={
+			method:"PATCH",
+			body:JSON.stringify(data),
+			headers:{
+				"Content-Type":"application/json",
+				Accept:"application/json",
+			}
+		}
+		fetch(url,options)
+	}
+	
+</script>
+
