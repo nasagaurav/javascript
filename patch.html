@@ -1,0 +1,32 @@
+<button onclick="handleclick()">click to update addresss</button>
+
+<script>
+
+	function handleclick()
+	{
+		let url="http://localhost:3000/users/1"
+
+		let body={
+			address:prompt("new address")
+		}
+
+		let data=JSON.stringify(body)
+
+		let headers={
+			Accept:"application/json",
+			"Content-Type":"application/json",
+		}
+		let options={
+			method:"PATCH",
+			body:data,
+			headers:headers
+		}
+
+		fetch(url,options)
+		.then(response=>response.json())
+		.then(output=>console.log(output))
+		.catch(err=>console.log("bhai error aaya"))
+
+	}
+	
+</script>

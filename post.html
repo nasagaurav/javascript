@@ -1,0 +1,50 @@
+<button onclick="insert()">click to insert data</button>
+
+<script>
+	
+	function insert()
+	{
+		// function starts 
+
+		let url="http://localhost:3000/users"
+
+		let body={
+			name:prompt('enter name'),
+			email:prompt('enter email'),
+			phone:prompt('enter phone'),
+			password:prompt('enter password'),
+			address:prompt('enter address')
+		}
+
+		console.log("body",body)
+
+		let data=JSON.stringify(body) //jo bhi pass kroge string me convert kr dega,
+
+		console.log("JSON-stringify wali line",data)
+
+		let headers={
+				Accept:"application/json",
+				"Content-Type":"application/json",
+			}
+
+		// options starts
+		let options={
+			method:"POST",
+			body:data,
+			headers:headers
+		}
+		// options ends
+
+		// fetch starts
+		fetch(url,options)
+		.then(response=>response.json())
+		.then(output=>console.log(output))
+		.catch(err=>console.log("err a gya bhai"))
+		// fetch ends
+
+
+		// function ends 
+	}
+
+
+</script>

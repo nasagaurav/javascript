@@ -1,0 +1,18 @@
+<button onclick="handleclick()">click to delete id 1 data</button>
+
+
+<script>
+	function handleclick()
+	{
+		let url="http://localhost:3000/users/1"
+
+		let options={
+			method:"DELETE"
+		}
+
+		fetch(url,options)
+		.then(response=>response.json())
+		.then(output=>console.log(output))
+		.catch(err=>console.log("some error came bro"))
+	}
+</script>
