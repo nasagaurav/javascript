@@ -1,0 +1,14 @@
+<!-- https://jsonplaceholder.typicode.com/ -->
+
+
+<script>
+	fetch('https://jsonplaceholder.typicode.com/albums')
+	  .then(response => response.json())
+	  .then(json => json.map(x=>`<li>${x.id} ${x.title}</li>`))
+	  .then(json => json.join(""))
+	  .then(json =>{
+	  	document.write(json)
+	  	return json
+	  } )
+	  .then(json => console.log(json))
+</script>

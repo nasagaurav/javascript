@@ -1,0 +1,13 @@
+<!-- https://jsonplaceholder.typicode.com/ -->
+<pre id="div"></pre>
+
+<script>
+	fetch('https://jsonplaceholder.typicode.com/users')
+	  .then(response => response.json())
+	  .then(json => JSON.stringify(json,null,2))
+	  .then(json =>{
+	  	div.innerHTML=json
+	  	return json
+	  } )
+	  .then(json => console.log(json))
+</script>

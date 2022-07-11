@@ -1,0 +1,23 @@
+<!-- https://jsonplaceholder.typicode.com/ -->
+
+<style>
+	div
+	{
+		display: flex;
+	}
+</style>
+<div id="div"></div>
+
+<script>
+	fetch('https://jsonplaceholder.typicode.com/photos')
+	  .then(response => response.json())
+	  .then(json => json.slice(0,10))
+	  .then(json => json.map(x=>`<li>${x.id} <img width="100" src="${x.thumbnailUrl}"  /></li>`))
+	  .then(json => json.join(""))
+	  .then(json =>{
+	  	// document.write(json)
+	  	div.innerHTML=json
+	  	return json
+	  } )
+	  .then(json => console.log(json))
+</script>
