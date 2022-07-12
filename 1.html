@@ -1,0 +1,37 @@
+<script>
+// promise wada hota hai jo ya to complete hoga ya nhi hoga
+// complete ka matlab hai resolve
+// nhi ka matlab hai reject
+// complete hone k baad bhi agla wada kr skte hai
+// complete wala part hai usko handle krna hota hai kaise
+// (completed)resolve handle krte hai "then" se
+// or (incomplete) ya reject ko bhi handle krte hai catch se
+// or dono me se koibhi error de gya to finally me code chelga hi chelga
+
+
+// asse hi liha fat arrow ka matlab nhi h
+// complete=>resolve=>"then"
+// incomplete=>error=>reject=>"catch"
+
+let promise = new Promise((resolve,reject)=>resolve("gaurav nasa"))
+
+promise
+.then(d=>console.log("data1",d))
+.then(d=>console.log("data2",d))
+.then(d=>console.log("data3",d))
+.then(d=>console.log("data4",d))
+.then(d=>console.log("data5",d))
+.catch(e=>console.log("err"))
+
+
+
+</script>
+
+
+
+
+
+
+
+
+

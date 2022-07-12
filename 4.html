@@ -1,0 +1,22 @@
+<script>
+	let promise1=new Promise((resolve,reject)=>resolve("resolveA"))
+	let promise2=new Promise((resolve,reject)=>reject("rejectB"))
+
+
+	// my strategy is to be like below
+	// 1. important and big data is to kept inside a variable
+	// 2. d is use for data in short inside "then" block always
+	// 3. e is use for error in short inside "catch" block always
+	// 4.  i use "x" as "item" and "i" as "index" in map,filter,some,eevry
+
+	promise1
+	.then(d=>console.log(d))
+	.catch(e=>console.warn(e))
+	.finally(()=>console.log("promise1 finished !!!"))
+
+	promise2
+	.then(d=>console.log(d))
+	.catch(e=>console.warn(e))
+	.finally(()=>console.log("promise2 finished !!!"))
+
+</script>

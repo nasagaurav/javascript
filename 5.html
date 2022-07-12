@@ -1,0 +1,11 @@
+<script>
+	let promise=new Promise((resolve,reject)=>resolve(["html","css","javascript"]))
+
+	promise
+	.then(d=>d.join("-"))//"html-css-javascript"
+	.then(d=>d.toUpperCase()) // "HTML-CSS-JAVASCRIPT"
+	.then(d=>console.log(d)) 	
+	.catch(e=>console.log(e))
+	.finally(()=>console.log("finally block ran"))
+
+</script>

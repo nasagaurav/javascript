@@ -1,0 +1,47 @@
+<script>
+
+let promise = new Promise((resolve,reject)=>resolve("gaurav nasa"))
+
+promise
+.then(d=>{
+	console.log(d)
+	return d.split(" ")
+})
+.then(d=>{
+	console.log(d)
+	return d.join("-")
+})
+.then(d=>{
+	console.log(d)
+	return d.replace("-",",")
+})
+.then(d=>{
+	console.log(d)
+	return d.replace(","," ")
+})
+.then(d=>{
+	console.log(d)
+	return d.toUpperCase()
+})
+.then(d=>{
+	console.log(d)
+	return `Mr. ${d}  Sirji  `
+	// return "Mr. "+d+" Sirji."
+})
+.then(d=>{
+	console.log(d)
+})
+.catch(e=>console.log("err"))
+
+
+
+</script>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<script>
+	let promise=new Promise((resolve,reject)=>reject("gaurav nasa"))
+
+	promise
+	.then(d=>console.log("true1"))
+	.then(d=>console.log("true2"))
+	.then(d=>console.log("true3"))
+	.then(d=>console.log("true4"))
+	.catch(e=>console.log("false",e))
+
+
+	// console.log(promise)
+
+</script>

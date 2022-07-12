@@ -1,0 +1,15 @@
+<script>
+	let promise1=new Promise((resolve,reject)=>reject("menu"))
+	let promise2=new Promise((resolve,reject)=>resolve("homepage"))
+	let promise3=new Promise((resolve,reject)=>resolve("products"))
+	let promise4=new Promise((resolve,reject)=>resolve("cart"))
+	let promise5=new Promise((resolve,reject)=>resolve("wshlist"))
+
+	let a=[promise1, promise2, promise3, promise4, promise5]
+
+	Promise.allSettled(a)
+	.then(d=>console.log(d))
+	.catch(e=>console.warn(e))
+	.finally(()=>console.log("finally ran"))
+
+</script>

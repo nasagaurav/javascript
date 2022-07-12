@@ -1,0 +1,6 @@
+json-server[npmjs]
+fetch [ get, post,delete,patch,put] 
+promise[resolve,reject,then,catch,finally]
+async,
+await
+trycatch

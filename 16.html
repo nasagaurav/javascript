@@ -1,0 +1,65 @@
+<script>
+	let p1=new Promise(resolve=>setTimeout(()=>resolve("data1"),1000)) //will run after 1 seconds
+	let p2=new Promise(resolve=>setTimeout(()=>resolve("data2"),2000)) //will run after 2 seconds
+	let p3=new Promise(resolve=>setTimeout(()=>resolve("data3"),3000)) //will run after 3 seconds
+	let p4=new Promise(resolve=>setTimeout(()=>resolve("data4"),4000)) //will run after 4 seconds
+	let p5=new Promise(resolve=>setTimeout(()=>resolve("data5"),1000)) //will run after 1 seconds
+	let p6=new Promise(resolve=>setTimeout(()=>resolve("data6"),1000)) //will run after 1 seconds
+	let p7=new Promise(resolve=>setTimeout(()=>resolve("data7"),1000)) //will run after 1 seconds
+	let p8=new Promise(resolve=>setTimeout(()=>resolve("data8"),1000)) //will run after 1 seconds
+	let p9=new Promise(resolve=>setTimeout(()=>resolve("data9"),1000)) //will run after 1 seconds
+	let p10=new Promise((resolve,reject)=>setTimeout(()=>reject("data10"),1000)) //will run after 1 seconds
+
+	// await can be written only inside async function
+	// what await does?-> it blocks the javascript line code and continue only if that part is completed
+	// what we mean by completed is either the promise is resolved or rejected
+	// so technically await resolves or rejects a promise
+
+
+
+	const abc= async ()=>{
+		try
+		{
+			// ... jo bhi code h jisme error aa skta h specially await ke case mein
+			// agar error aa gya to phir catch usko handle kregea
+			// bhia ye wo wala cathc nhi h then,catch,finally wala 
+			let r1=await p1
+			let r2=await p2
+			let r3=await p3
+			let r4=await p4
+			let r5=await p5
+			let r6=await p6
+			let r7=await p7
+			let r8=await p8
+			let r9=await p9
+			let r10=await p10
+
+			console.log("r1",r1)
+			console.log("r2",r2)
+			console.log("r3",r3)
+			console.log("r4",r4)
+			console.log("r5",r5)
+			console.log("r6",r6)
+			console.log("r7",r7)
+			console.log("r8",r8)
+			console.log("r9",r9)
+			console.log("r10",r10)
+
+		}
+		catch(err)
+		{
+			console.log("some err",err)
+		}
+		finally
+		{
+			console.log("finally ran ")
+		}
+	}
+
+
+	abc()
+</script>
+
+
+
+

@@ -1,0 +1,20 @@
+<script>
+	let promise1=new Promise(resolve=>resolve("p-data1"))
+	let promise2=new Promise(resolve=>resolve("p-data2"))
+	let promise3=new Promise(resolve=>resolve("p-data3"))
+	let promise4=new Promise(resolve=>resolve("p-data4"))
+	let promise5=new Promise(resolve=>resolve("p-data5"))
+	let promise6=new Promise(resolve=>resolve("p-data6"))
+	let promise7=new Promise(resolve=>resolve("p-data7"))
+	let promise8=new Promise(resolve=>resolve("p-data8"))
+	let promise9=new Promise(resolve=>resolve("p-data9"))
+	let promise10=new Promise(resolve=>resolve("p-data10"))
+
+	let a=[promise1, promise2, promise3, promise4, promise5, promise6, promise7, promise8, promise9, promise10]
+
+	Promise.all(a)
+	.then(d=>console.log(d))
+	.catch(e=>console.warn(e))
+	.finally(()=>console.log("finally ran"))
+
+</script>
